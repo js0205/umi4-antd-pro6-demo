@@ -50,6 +50,7 @@ export async function getInitialState(): Promise<{
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
 export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
   return {
+    title: 'pro start admin',
     rightContentRender: () => <RightContent />,
     waterMarkProps: {
       content: initialState?.currentUser?.name,
